@@ -1,0 +1,127 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+   	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/border"
+	    android:padding="10dp">
+	
+	    <TextView
+	        android:id="@+id/text_state"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/undefined"
+	        android:textSize="24sp"
+	        android:padding="10dp" />
+	
+	    <LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+	
+	    	<Button
+	    	    android:id="@+id/button_open_door"
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="5"
+	    	    android:text="@string/open_the_door"
+	    	    android:textColor="@color/green" />
+	
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+	    	<Button
+	    	    android:id="@+id/button_close_door"
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="5"
+	    	    android:text="@string/close_the_door"
+	    	    android:textColor="@color/red">
+	    	</Button>
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" />
+		</LinearLayout>
+	
+	</LinearLayout>
+
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/border"
+	    android:padding="10dp" >
+
+	   	<TextView
+	        android:id="@+id/text_teddy_actions"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/actions_teddy"
+	        android:textSize="24sp"
+	        android:padding="10dp" />
+
+	    <LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" />
+	
+	    	<Button
+	    	    android:id="@+id/button_teddy_here"
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_weight="5"
+	    	    android:text="@string/teddy_here" />
+	
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" />
+	    	<Button
+	    	    android:id="@+id/button_book_here"
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_weight="5"
+	    	    android:text="@string/book_here" >
+	    	</Button>
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+
+   	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="3" />
+</LinearLayout>

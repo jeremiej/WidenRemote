@@ -1,0 +1,11 @@
+[meta]
+# application name
+appname = "Widen Remote"
+# manifest file format version
+version = 1
+  
+[application]
+# give read-only permission to the java class org.qeo.deviceinfo.DeviceInfo
+com::accenture::cdi::widen::data::Door = w
+com::accenture::cdi::widen::data::TeddySensor = w
+com::accenture::cdi::widen::data::BookSensor = w

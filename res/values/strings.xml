@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WidenRemote</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="open_the_door">Porte ouverte</string>
+    <string name="close_the_door">Porte fermée</string>
+    <string name="undefined">Etat de la porte</string>
+    <string name="actions_teddy">Evénements sur la peluche</string>
+    <string name="teddy_here">Peluche présente</string>
+    <string name="book_here">Livre détecté</string>
+
+</resources>
