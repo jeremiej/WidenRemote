@@ -1,7 +1,5 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1390319990224 57318 11a238661df847db2c474a28b7b2158e4146e0e5 C:\Users\julien.guezennec\Development\Source\workspace_adt\WidenRemote\libs\qeo-java-core-0.17.0-SNAPSHOT.jar
-1390319990224 57318 11a238661df847db2c474a28b7b2158e4146e0e5 C:\Users\julien.guezennec\Development\Source\checkout\WidenData\libs\qeo-java-core-0.17.0-SNAPSHOT.jar
-1390395598639 621451 5896b0a4e377ac4242eb2bc785220c1c4fc052f4 C:\Users\julien.guezennec\Development\Source\checkout\WidenData\libs\android-support-v4.jar
-1390396778069 621451 5896b0a4e377ac4242eb2bc785220c1c4fc052f4 C:\Users\julien.guezennec\Development\Source\workspace_adt\WidenRemote\libs\android-support-v4.jar
+1390920369259 57318 11a238661df847db2c474a28b7b2158e4146e0e5 C:\Development\projets\WidenRemote\libs\qeo-java-core-0.17.0-SNAPSHOT.jar
+1390916714724 57318 11a238661df847db2c474a28b7b2158e4146e0e5 C:\Development\projets\WidenData\libs\qeo-java-core-0.17.0-SNAPSHOT.jar

@@ -10,5 +10,7 @@
     <string name="actions_teddy">Evénements sur la peluche</string>
     <string name="teddy_here">Peluche présente</string>
     <string name="book_here">Livre détecté</string>
+    <string name="actions_tv_recipe">Evénement TV</string>
+    <string name="tv_recipe_here">Nouvelle recette</string>
 
 </resources>

@@ -18,6 +18,7 @@ import com.accenture.cdi.widen.Events;
 import com.accenture.cdi.widen.data.BookSensor;
 import com.accenture.cdi.widen.data.Door;
 import com.accenture.cdi.widen.data.TeddySensor;
+import com.accenture.cdi.widen.data.TvRecipeSensor;
 
 public class Main extends Activity {
 
@@ -26,12 +27,14 @@ public class Main extends Activity {
     private StateWriter<Door> stateWriterDoor = null;
     private EventWriter<TeddySensor> eventWriterTeddyHere = null;
     private EventWriter<BookSensor> eventWriterBookHere = null;
+    private EventWriter<TvRecipeSensor> eventWriterTvRecipeHere = null;
 
     private TextView stateText = null;
     private Button openDoor = null;
     private Button closeDoor = null;
     private Button teddyHere = null;
     private Button bookHere = null;
+    private Button tvRecipeHere = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,9 @@ public class Main extends Activity {
        if (eventWriterBookHere != null) {
     	   eventWriterBookHere.close();
         }
+       if (eventWriterTvRecipeHere != null) {
+    	   eventWriterTvRecipeHere.close();
+        }
         if (qeo != null) {
             qeo.close();
         }
@@ -78,6 +84,7 @@ public class Main extends Activity {
 		this.closeDoor = (Button) findViewById(R.id.button_close_door);
 		this.teddyHere = (Button) findViewById(R.id.button_teddy_here);
 		this.bookHere = (Button) findViewById(R.id.button_book_here);
+		this.tvRecipeHere = (Button) findViewById(R.id.button_tv_recipe_here);
 	}
 
 	private void initCommands() {
@@ -123,6 +130,16 @@ public class Main extends Activity {
 			}
 		});
 		this.bookHere.setEnabled(false);		
+		
+		// Command for "tv recipe here"
+		this.tvRecipeHere.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				writeEvent(Events.TV_RECIPE_HERE);
+			}
+		});
+		this.tvRecipeHere.setEnabled(false);	
 	}
 
 	private void updateStateText(int stateTextId) {
@@ -149,6 +166,9 @@ public class Main extends Activity {
 		case Events.BOOK_HERE:
 			this.eventWriterBookHere.write(new BookSensor("livre"));
 			break;
+		case Events.TV_RECIPE_HERE:
+			this.eventWriterTvRecipeHere.write(new TvRecipeSensor("recette"));
+			break;
 		}
 	}
 
@@ -165,10 +185,12 @@ public class Main extends Activity {
 				stateWriterDoor = qeo.createStateWriter(Door.class);
 				eventWriterTeddyHere = qeo.createEventWriter(TeddySensor.class);
 				eventWriterBookHere = qeo.createEventWriter(BookSensor.class);
+				eventWriterTvRecipeHere = qeo.createEventWriter(TvRecipeSensor.class);
 				openDoor.setEnabled(true);
 				closeDoor.setEnabled(true);
 				teddyHere.setEnabled(true);
 				bookHere.setEnabled(true);
+				tvRecipeHere.setEnabled(true);
 			} catch (QeoException e) {
 				e.printStackTrace();
 			}
